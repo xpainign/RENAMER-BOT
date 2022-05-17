@@ -91,7 +91,7 @@ async def rename_cb(bot, update):
     
     await bot.send_message(
         chat_id=update.chat.id,
-        text="<b>😃 Now select the desired option</b> \n<b>🔰 CURRENT CAPTION : </b>\n script.CUSTOM_CAPTION_UL_FILE.format(newname=file_name)\n<b>File Name</b> : <code>{}</code> \n\n.format(filename),
+        text="<b>😃 Now select the desired option</b> \n<b>🔰 CURRENT CAPTION : </b>\n script.CUSTOM_CAPTION_UL_FILE.format(newname=file_name),
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="📝 RENAME", callback_data="rename_button")],
                                                 [InlineKeyboardButton(text="⛔ CANCEL", callback_data="cancel_e")]]),
         parse_mode="html",
